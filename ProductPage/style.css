@@ -1,0 +1,415 @@
+.container
+{
+    margin-top: 100px;
+}
+
+.location
+{
+    background: #003d69;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.com-md-7
+{
+    color: #555;
+}
+
+.stars
+{
+    height: 15px;
+}
+
+.price
+{
+    color: #003d69;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.saveLater
+{
+    background: #003d69;
+    color:  #FFFFFF;
+    font-size: 15px;
+}
+
+.related
+{
+    padding-bottom: 30px;
+}
+
+/*------------------------- 404 page -----------------------*/
+
+.big404
+{
+    color: #003d69;
+    font-size: 500%;
+    font-weight: bold;
+}
+
+.mediumjumbocol
+{
+    color: #003d69;
+}
+
+/*------------------------- terms and conditions -----------------------*/
+
+#terms p{
+    text-align: justify;
+}
+
+/*------------------------- sign in/registration page -----------------------*/
+
+.jumbosize
+{
+    max-width: 550px;
+}
+.signregistertitle
+{
+    text-align: center;
+    color: #003d69;
+}
+
+.valid {
+    color: green;
+}
+.valid:before {
+    position: relative;
+    left: -15px;
+    content: "✓";
+}
+.invalid {
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -15px;
+    content: "✕";
+}
+.password-message{
+    margin-top: 10px;
+    text-align:center;
+    font-style: italic;
+}
+.password-message p{
+    margin: 0rem auto; 
+}
+
+/*------------------------
+
+.side-menu
+{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: rgb(221, 221, 221);
+}
+
+.side-menu ul
+{
+    margin-left: 10px;
+}
+
+.side-menu ul li
+{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.side-menu ul li:hover
+{
+    color: orange;
+}
+
+.side-menu ul li ul
+{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+
+.side-menu ul li:hover ul
+{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+
+----------------*/
+
+/*-------------------- product list cards image -------------------------*/
+
+.product-top img
+{
+    width: 100%;
+}
+
+.overlay-right
+{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.overlay-right .fa
+{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary
+{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.product-top:hover .overlay-right
+{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/*--------------------- product list cards details ------------------------*/
+
+.product-bottom .fa
+{
+    color: orange;
+    font-size: 10px;
+}
+
+.product-bottom h3
+{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom h5
+{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/*------------------------- footer -----------------------*/
+
+.fa{
+    color: #000;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.fa-instagram{
+    padding-right: 15px;
+}
+
+.fa:hover{
+    text-decoration: none;
+}
+
+.fa-facebook:hover{
+    color: #3B5998;
+}
+.fa-twitter:hover{
+    color:  #55ACEE;
+}
+.fa-instagram:hover{
+    color: #ea4c89;
+}
+
+/*------------------------- used for TASKER at upper-left corner -----------------------*/
+
+@font-face {
+    font-family: textMeOne;
+    src: url(text_me_one/TextMeOne-Regular.ttf);
+}
+.logo, #home-logo{
+    font-family: textMeOne;
+}
+
+/*------------------------- used for user messages -----------------------*/
+
+.user-messages{
+    margin: 1.5rem auto; 
+    text-align:center;
+    font-style: italic;
+    margin-top: -20px;
+}
+
+/*------------------------- used for myaccount -----------------------*/
+
+.edit-buttons{
+    margin: 0 10px;
+}
+
+/*------------------------- home page -----------------------*/
+/*---------- general, categories & listings ----------*/
+#home-body{
+    margin: 0;
+    background-color: #e9ecef;
+}
+.category-title{
+    padding: 7px;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.308);
+    width: 50%;
+    word-wrap: break-word;
+}
+#featured-listings{
+    margin-bottom: 5%;
+}
+#featured-categories .col-md-3, #all-categories .col-md-3{
+    margin-bottom: 3%;
+}
+#show-all-categ{
+    color: #0b4269cb;
+    text-decoration: none;
+}
+#show-all-categ:hover{
+    color: #003d69;
+}
+@media screen and (max-width: 767px){
+    .product-bottom, #all-categories .col-md-3{
+        margin-bottom: 5%; 
+    }
+}
+
+/*---------- home page navbar ----------*/
+#home-logo, #home-nav li a{
+    color: #003d69;
+}
+.navbar-collapse .btn{
+    color: #003d69;
+    border-color: #cccecf;
+    background-color: #ffffff;
+}
+.navbar-collapse .btn:hover{
+    background-color: #f7f5f5;
+    border-color: #d5d8da;
+}
+#home-nav-icon{
+    background-color: #5c9cc4cb;
+}
+
+/*---------- slideshow ----------*/
+.slider-container{
+    width: 98.5vw;
+    margin: 0 auto;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    animation: slideshow 15s infinite; 
+}
+.homeSlides{
+    width: 33.333333333%;
+    height: 100%;
+    float: left;
+    background: #eee;
+    position: relative;
+}
+.homeSlides:nth-child(1){
+    background: url(images/taskerslideshow.png) no-repeat center;
+    background-size: cover;
+}
+.homeSlides:nth-child(2){
+    background: url(images/handshake.jpg) no-repeat center;
+    background-size: cover;
+}
+.homeSlides:nth-child(3){
+    background: url(images/laptop.jpg) no-repeat center;
+    background-size: cover;
+}
+#connect-slide, #laptop-slide{
+    display: inline-block;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vw;
+    top: 30%;
+}
+#connect-slide{
+    width: 20%;
+    left: 20px;
+}
+#laptop-slide{
+    width: 30%;
+    left: 85px;
+}
+@media all and (min-width: 1400px){
+    .slider-container{
+      min-height: 70vh; 
+    }
+}
+@media all and (max-width: 980px){
+    .slider-container{
+      width: 96.4vw; 
+    }
+}
+@media all and (max-width: 750px){
+    #connect-slide{
+        font-size: 3vw;
+        left: 30px;
+        top: 3%;
+        width: 70%;
+        height: 100%;
+    }
+    #laptop-slide{
+        font-size: 3.5vw;
+        left: 20px;
+        top: 5%;
+        width: 40%;
+    }
+}
+@keyframes slideshow{
+    /* when a % of time has passed, the images will have moved a specific percentage */
+    27%{
+        transform: translateX(0);
+    }  
+    33%{
+        transform: translateX(-33.3333333333%);
+    }  
+    60%{
+        transform: translateX(-33.3333333333%);
+    }
+    66%{
+        transform: translateX(-66.6666666666%);
+    }
+    94%{
+        transform: translateX(-66.6666666666%);
+    }
+    /* when 15 seconds have passed, go back to the beginning*/
+    100%{
+        transform: translateX(0);
+    } 
+}

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Listings</title>
+    <link rel="tasker icon" type="image/x-icon" href="images/t_favicon.png" />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <section class="items">
+
+        <!-- navbar -->
+        <nav class="navbar shadow-lg sticky-top navbar-expand-lg navbar-dark" style="background-color: #003d69">
+            <a class="navbar-brand" href="#">Tasker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Carpentry</a>
+                            <a class="dropdown-item" href="category.html">Lighting</a>
+                            <a class="dropdown-item" href="category.html">Plumbing</a>
+                            <a class="dropdown-item" href="category.html">Interior Design</a>
+                            <a class="dropdown-item" href="category.html">Teaching</a>
+                            <a class="dropdown-item" href="category.html">Dog Walker</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved.html">Saved Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myaccount.html">My Account</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                
+                <!-- register navbar button and form -->
+                <a type="button" class="btn btn-outline-light my-2 my-sm-0 mr-2" href="signin.html">
+                    Sign In
+                </a>
+                <a type="button" class="btn btn-outline-light my-2 my-sm-0" href="register.html">
+                    Register
+                </a>
+            </div>
+        </nav>
+
+        <!-- main content -->
+        <div class="jumbotron pt-5">
+            <h1 class="display-4">Saved Listings</h1>
+            <p>You currently have <b>2</b> saved listings</p>
+            <hr class="my-4">
+
+            <!-- product list -->
+            <div class="container mt-5">
+            
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/astronaut.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <a href="productpage.html">
+                                <h3>Rocket Engineer</h3>
+                            </a>
+                            <h5>€82.00</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/pizza.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <a href="productpage.html">
+                                <h3>Pizza Delivery</h3>
+                            </a>
+                            <h5>€4.00</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">About Tasker</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                harum esse fugiat. Itaque, culpa?</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">What you can do to help</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                excepturi hic.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://tasker.com/"> Tasker.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    <!-- Footer -->
+
+</body>
+</html>

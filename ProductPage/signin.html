@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <link rel="tasker icon" type="image/x-icon" href="images/t_favicon.png" />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- navbar -->
+        <nav class="navbar shadow-lg sticky-top navbar-expand-lg navbar-dark" style="background-color: #003d69">
+            <a class="navbar-brand" href="#">Tasker</a>
+        </nav>
+
+        <!-- sign in form -->
+        <div class="signincontent m-5">
+            <div class="jumbotron jumbosize shadow-lg mx-auto">
+                <h3 class="signregistertitle mt-n3 mb-3">Sign in to your Tasker account</h3>
+                
+                <form class="px-4 py-3"> 
+                
+                <a class="btn btn-primary btn-social btn-lg btn-block btn-google shadow-lg">
+                    <span class="fa fa-google" style="color: white;"></span> <span style="color: white;">Sign in with Google</span>
+                </a>
+
+                <hr class="my-4">
+                <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <div class="custom-control custom-switch ml-n3">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Remember Me</label>
+                        </div>
+                    </div>
+                </div>
+                <p>By pressing Sign In you accept the following <a href="TandC.txt">Terms and Conditions</a></p>
+                <button type="submit" class="btn btn-primary shadow-lg">Sign in</button>
+            </form>
+            <hr class="my-4">
+            <a class="dropdown-item" href="register.html">New around here? <span style="color:rgb(8, 115, 255);">Sign up</span></a>
+            <a class="dropdown-item" href="forgot.html">Forgot password?</a>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+TASKER
+
+This artifact was created for the JAYE Malta Start Up Programme 2019/2020
+
+Before making use of the artifact a server has to be set up. This server has to contain the following:
+    • taskerdb has to be imported.
+    • the server has to have python3 installed along with geopy, the latter can be easily done by using the command : "pip install geopy"
+    • all of the ProductPage folder has to be put inside of the server.
+N.B: The html pages were left in the ProductPage to highlight the front-end development process of Tasker
+
+One can make use of the website by entering home.php
+All of the code for the recommender system can be found in ProductPage/rSystem.py

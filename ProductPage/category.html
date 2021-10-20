@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Category</title>
+    <link rel="tasker icon" type="image/x-icon" href="images/t_favicon.png" />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <section class="items">
+
+        <!-- navbar -->
+        <nav class="navbar shadow-lg sticky-top navbar-expand-lg navbar-dark" style="background-color: #003d69">
+            <a class="navbar-brand" href="#">Tasker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Carpentry</a>
+                            <a class="dropdown-item" href="category.html">Lighting</a>
+                            <a class="dropdown-item" href="category.html">Plumbing</a>
+                            <a class="dropdown-item" href="category.html">Interior Design</a>
+                            <a class="dropdown-item" href="category.html">Teaching</a>
+                            <a class="dropdown-item" href="category.html">Dog Walker</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved.html">Saved Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myaccount.html">My Account</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                
+                <!-- register navbar button and form -->
+                <a type="button" class="btn btn-outline-light my-2 my-sm-0 mr-2" href="signin.html">
+                    Sign In
+                </a>
+                <a type="button" class="btn btn-outline-light my-2 my-sm-0" href="register.html">
+                    Register
+                </a>
+            </div>
+        </nav>
+
+        <!-- main content -->
+        <div class="jumbotron pt-5">
+            <h1 class="display-4">Category: <b>Carpentry</b></h1>
+            <p>There are <b>5</b> listings in this category</p>
+            <hr class="my-4">
+
+            <!-- filters/options -->
+            <div class="accordion shadow-lg" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <form class="form my-1">
+                            <button class="btn btn-outline-primary pull-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Filters
+                            </button>
+                            
+                            </form>
+                            <form class="form-inline pull-right">
+                                <p class="lead my-1 mr-2" for="inlineFormCustomSelectPref">Sort By</p>
+                                <select class="custom-select my-0 mr-sm-3" id="inlineFormCustomSelectPref">
+                                  <option selected>Featured</option>
+                                  <option value="1">Most Recent</option>
+                                  <option value="2">Lowest Price</option>
+                                  <option value="3">Highest Price</option>
+                                </select>  
+                            </form>
+                    </div>
+              
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            <!-- filter form -->
+                            <form>
+                                <!-- price range filter -->
+                                <div class="row">
+                                    <div class="input-group mb-3 col-md-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">From €</span>
+                                        </div>
+                                        <input type="text" placeholder="0" class="form-control text-right" aria-label="Amount (to the nearest euro)">
+                                        <div class="input-group-append">
+                                          <span class="input-group-text">.00</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="input-group mb-3 col-md-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">To &nbsp;&nbsp;&nbsp;&nbsp; €</span>
+                                        </div>
+                                        <input type="text" placeholder="250" class="form-control text-right" aria-label="Amount (to the nearest euro)">
+                                        <div class="input-group-append">
+                                          <span class="input-group-text">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- minimum rating filter -->
+                                <label for="ratingFilter">Minimum Rating</label>
+                                <input type="range" class="custom-range"  min="0" max="5" id="ratingFilter">
+
+                                <div class="pull-right my-3">
+                                    <button type="button" class="btn btn-outline-primary">Clear</button>
+                                    <button type="button" class="btn btn-primary">Apply</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product list -->
+            <div class="container mt-5">
+            
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/carpenter.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart-o rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <a href="productpage.html">
+                                <h3>Kahhal tas-Soqfa</h3>
+                            </a>
+                            <h5>€23.00</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/carpenter.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart-o rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <a href="productpage.html">
+                                <h3>Kahhal tas-Soqfa</h3>
+                            </a>
+                            <h5>€23.00</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/carpenter.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart-o rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <a href="productpage.html">
+                                <h3>Kahhal tas-Soqfa</h3>
+                            </a>
+                            <h5>€23.00</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/carpenter.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart-o rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <a href="productpage.html">
+                                <h3>Kahhal tas-Soqfa</h3>
+                            </a>
+                            <h5>€23.00</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-top shadow-lg">
+                            <a href="productpage.html">
+                                <img src="images/carpenter.png" onerror="this.src='images/nia.png';">
+                            </a>
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Save for Later">
+                                    <i class="fa fa-heart-o rounded"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <a href="productpage.html">
+                                <h3>Kahhal tas-Soqfa</h3>
+                            </a>
+                            <h5>€23.00</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">About Tasker</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                harum esse fugiat. Itaque, culpa?</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">What you can do to help</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                excepturi hic.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://tasker.com/"> Tasker.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    <!-- Footer -->
+
+</body>
+</html>
